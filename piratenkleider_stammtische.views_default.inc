@@ -59,11 +59,14 @@ function piratenkleider_stammtische_views_default_views() {
   $handler->display->display_options['fields']['field_landkreis']['label'] = '';
   $handler->display->display_options['fields']['field_landkreis']['exclude'] = TRUE;
   $handler->display->display_options['fields']['field_landkreis']['element_label_colon'] = FALSE;
+  /* Sortierkriterien: Inhalt: Landkreis (field_landkreis) */
+  $handler->display->display_options['sorts']['field_landkreis_value']['id'] = 'field_landkreis_value';
+  $handler->display->display_options['sorts']['field_landkreis_value']['table'] = 'field_data_field_landkreis';
+  $handler->display->display_options['sorts']['field_landkreis_value']['field'] = 'field_landkreis_value';
   /* Sortierkriterien: Inhalt: Titel */
   $handler->display->display_options['sorts']['title']['id'] = 'title';
   $handler->display->display_options['sorts']['title']['table'] = 'node';
   $handler->display->display_options['sorts']['title']['field'] = 'title';
-  $handler->display->display_options['sorts']['title']['order'] = 'DESC';
   /* Filterkriterium: Inhalt: Veröffentlicht */
   $handler->display->display_options['filters']['status']['id'] = 'status';
   $handler->display->display_options['filters']['status']['table'] = 'node';
