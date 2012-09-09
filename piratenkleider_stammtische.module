@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Piratenkleider Stammtische feature.
+ */
+
+include_once 'piratenkleider_stammtische.features.inc';
